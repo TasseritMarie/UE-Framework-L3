@@ -6,12 +6,10 @@ use Symfony\Component\HttpFoundation\Response;
 
 class LivreController
 {
-    public function numero()
+    public function numero($ref)
     {
-        $number = random_int(0, 100);
-
-        return new Response(
-            '<html><body>Numéro du livre '.$number.'</body></html>'
+         return new Response(
+            '<html><body>Numéro du livre '.$ref.'</body></html>'
         );
     }
 }

@@ -4,5 +4,5 @@
 
 # le nom de la route est "app_livre_number" (pas important pour le moment il n'y en qu'une)
 app_livre_number:
-  path: /livre/numero
+  path: /livre/numero/{ref}
   controller: App\Controller\LivreController::numero
