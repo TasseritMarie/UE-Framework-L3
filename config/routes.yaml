@@ -6,3 +6,5 @@
 app_livre_number:
   path: /livre/numero/{ref}
   controller: App\Controller\LivreController::numero
+  defaults:
+    ref: 1
