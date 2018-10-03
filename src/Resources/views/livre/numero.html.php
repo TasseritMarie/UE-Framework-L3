@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Welcome to Symfony!</title>
-</head>
-<body>
-<h1>Numero de référence : <?= $articles ?></h1>
+<?php
+/** @var Symfony\Component\Templating\PhpEngine $view */
+$view->extend('base.html.php')
+?>
 
-</body>
-</html>
+LA référence du livre est <b><?= $articles ?></b>

@@ -7,11 +7,15 @@ use Symfony\Component\HttpFoundation\Response;
 
 class LivreController extends AbstractController
 {
+    /**
+     * @param $ref
+     * @return Response
+     */
     public function numero($ref)
     {
-         return $this->render(
-             'livre/numero.html.php',
-             array('articles' => $ref)
-         );
+        return $this->render(
+            'livre/numero.html.php',
+            array('articles' => $ref)
+        );
     }
 }
